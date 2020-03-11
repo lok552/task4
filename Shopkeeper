@@ -1,0 +1,64 @@
+package Shopkeeper;
+import java.util.Scanner;
+public class Shopkeeper {
+	public static void main(String args[])
+	{
+		byte productNo[]={};
+		byte productCode[]={};
+		float retailPrice;
+		int quantitySold,reply;
+		float totalRetailValue;
+		Scanner sc=new Scanner(System.in);
+		for(int i=0;i<3;i++)
+		{
+			System.out.println("enter product");
+			System.out.println("press 1 for number or press 2 for code ");
+			reply=sc.nextInt();
+			if(reply==1)
+			{
+				for(int Counter=0;Counter<3;Counter++){
+					System.out.print("Number:");
+					productNo[i]=sc.nextByte();
+				
+					System.out.println("Enter quantity Solid:");
+					quantitySold=sc.nextInt();
+					switch(productNo[i])
+					{
+					case 1:totalRetailValue=22.50f*quantitySold;
+					       System.out.println("totalRetailValue:"+totalRetailValue);
+					       break;
+					case 2:totalRetailValue=44.50f*quantitySold;
+				            System.out.println("totalRetailValue:"+totalRetailValue);
+				            break;
+					case 3:totalRetailValue=9.98f*quantitySold;
+				            System.out.println("totalRetailValue:"+totalRetailValue);
+				            break;
+					}
+				}
+		
+					
+			}else if(reply==2)
+			{
+				System.out.print("Code:");
+				productCode=sc.nextLine().toUpperCase().getBytes();
+				System.out.println("Enter quantity Solid:");
+				quantitySold=sc.nextInt();
+				switch(productCode[0])
+				{
+				case 'A':totalRetailValue=22.50f*quantitySold;
+			             System.out.println("totalRetailValue:"+totalRetailValue);
+			             break;
+			    case 'B':totalRetailValue=44.50f*quantitySold;
+		                 System.out.println("totalRetailValue:"+totalRetailValue);
+		                 break;
+			    case 'C':totalRetailValue=22.50f*quantitySold;
+		                 System.out.println("totalRetailValue:"+totalRetailValue);
+		                 break;
+		 }
+		}
+      }
+	}
+  }
+	
+
+

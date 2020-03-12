@@ -1,0 +1,18 @@
+package lmsexamples;
+
+import java.util.Scanner;
+
+public class Accept
+{
+public static void main(String args[])
+{
+	 String st1,st2;
+    Scanner sc=new Scanner(System.in);
+    System.out.println("Enter the String");
+    st1=sc.nextLine();
+    System.out.println("Enter the String");
+    st2=sc.nextLine();
+    System.out.println("Enter the string"+st1+"Technologies");
+}
+
+}

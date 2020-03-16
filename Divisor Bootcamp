@@ -1,0 +1,51 @@
+public class Divisor {
+
+	public static void main(String[] args) 
+
+	{
+
+		//using try-catch block to handle exceptions
+
+		try
+
+		{
+
+		//read input through command line argument parsing string to integer
+
+		int divisor=Integer.parseInt(args[0]);
+
+		//read input through command line arguments parsing string to integer
+
+		int dividend=Integer.parseInt(args[1]);
+
+		//calculate the quotient by using  given condition
+
+		int quotient=divisor/dividend;
+
+		//calculate the remainder by using given condition
+
+		int remainder=(int)divisor%dividend;
+
+		
+
+		System.out.println("quotient is:"+quotient);
+
+		System.out.println("remainder is:"+remainder);
+
+		}
+
+		catch(ArrayIndexOutOfBoundsException ae){
+
+			System.out.println();
+
+		}
+
+		
+
+
+
+	}
+
+
+
+}

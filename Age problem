@@ -1,0 +1,35 @@
+public class Variables {
+
+
+
+	public static void main(String[] args) {
+
+		java.util.Scanner in = new java.util.Scanner(System.in);
+
+		String name=in.nextLine();  //Taking input from console
+
+		String[] spliting=name.split(","); //Splitting the string by using split method
+
+		String first="";int second=0;String third="";
+
+		 for(int i=0;i<=2;i++)  // For loop for 3 variables name,age,gender
+
+		 {
+
+			 first=spliting[0];  // Sepating the name and storing in first variable
+
+			 second=Integer.parseInt(spliting[1]); //	Sepating the age and conveting into integer and storing in second variable
+
+			 third=spliting[2];  //Sepating the gender and storing in third variable
+
+		 }
+
+		 System.out.println("Name: "+first+",Age: "+second+"and Gender: "+third); //printing in name age and gender format
+
+		 in.close();
+
+	}
+
+
+
+}

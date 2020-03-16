@@ -1,0 +1,64 @@
+package Bootcamp;
+import java.util.Scanner;
+public class Vowels {
+	
+
+
+
+		public static void main(String[] args) {
+
+			java.util.Scanner in = new java.util.Scanner(System.in);
+
+			System.out.println("Input an alphabet:");
+
+			char ch = in.next().charAt(0); // Taking input from console
+
+			int count = 0;  // taking count as 0
+
+			switch(ch)  // Using switch statement to check whether it is vowel or not
+
+			{
+
+			case 'a':
+
+			case 'e':
+
+			case 'i':
+
+			case 'o':
+
+			case 'u':
+
+			case 'A':
+
+			case 'E':
+
+			case 'I':
+
+			case 'O':
+
+			case 'U':
+
+				count++;  // if it is vowel count is incremented to 1
+
+			}
+
+			if(count==1) // if it is vowel it prints vowel 
+
+				System.out.println("Input character is vowel");
+
+			else  // if it is not vowel it checks upper and lower cases in alphabets
+
+				if((ch>='a'&&ch<='z')||(ch>='A'&&ch<='Z'))
+
+					System.out.println("Input character is consonant");
+
+				else  // if it is not alphabet it prints invalid data
+
+					System.out.println("Invalid data ");
+
+			in.close();
+
+		}
+
+}

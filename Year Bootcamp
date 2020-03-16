@@ -1,0 +1,40 @@
+package Bootcamp;
+import java.util.Scanner;
+public class Year {
+	
+  public static void main(String[] args) 
+
+		{
+
+			//read input from keyboard using Scanner
+
+			Scanner sc=new Scanner(System.in);
+
+			//prompt the user for input values
+
+			System.out.println("enter no.of days:");
+
+			//read the values from input then assign the input values to varable d
+
+			int d=sc.nextInt();
+
+			//dividing number of days to years 
+
+			int years=(d/365);
+
+			int	months=(d%365)/7;
+
+			int days=(d%365)%7;
+
+			//print number of years,months and days
+
+			System.out.println("number of years:"+years);
+
+			System.out.println("number of months:"+months);
+
+			System.out.println("number of days:"+days);
+
+		}
+
+}
+

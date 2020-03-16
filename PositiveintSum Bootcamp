@@ -1,0 +1,28 @@
+package Bootcamp;
+
+import  java.io.BufferedReader;
+import  java.io.IOException;
+import java.io.InputStreamReader;
+public class Positive {
+
+	public static void main(String args[])throws NumberFormatException,IOException{
+		//Declare int type array
+		int numbers[]=new int[5];int sum=0;
+		BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
+		
+		 //Accepting the input values from keyboard
+		for(byte b=0;b<5;b++)
+		{
+			System.out.println("Enter an Integer:");
+			numbers[b]=Integer.parseInt(br.readLine());
+			if(numbers[b]<0)
+			{
+				sum+=0;
+			}else
+			{
+				sum+=numbers[b];
+			}
+		}
+		System.out.println("sum:"+sum);
+	}
+}

@@ -1,0 +1,78 @@
+package Bootcamp;
+
+import java.util.Scanner;
+
+import java.io.IOException;
+
+public class Array {
+
+	 public static void main(String[] args)throws IOException
+	   {
+		   
+		 //initializing the variable i
+
+		 		int i=0;
+
+		 		int x=0;
+
+		 		boolean a=false;
+
+		 		//to store values using array
+
+		 		int data[]={10,20,32,50,60};
+
+		 		//read input values through scanner
+
+		 		Scanner sc=new Scanner(System.in);
+
+		 		//prompt the user for taking input value
+
+		 		System.out.println("enter any number:");
+
+		 		int num=sc.nextInt();
+
+		 		for(i=0;i<=4;i++)
+
+		 		{
+
+		 		    if(num==data[i])
+
+		 			{
+
+		 				 a=true;
+
+		 				 x=i;
+
+		 				 break;
+
+		 			}
+
+		 			
+
+		 		
+
+		 		}
+
+		 		if(a)
+
+		 		{
+
+		 			System.out.println("Found @ pos "+x);
+
+		 			
+
+		 		}
+
+		 		else 
+
+		 		{
+
+		 			System.out.println("Not Found");
+
+		 		}
+
+	
+	      }
+
+	} 
+	
